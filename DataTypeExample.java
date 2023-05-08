@@ -1,4 +1,4 @@
-package class230_330;
+package class05_06pm;
 
 public class DataTypeExample {
 
@@ -127,11 +127,11 @@ public class DataTypeExample {
 		//wrapper classes...Integer/Float/Character...etc.
 		
 		
-//		Integer a = 10;
-//		Character c = 'c';
-//		System.out.println(a+c);//a=10 but c=ascci code(99)
-//		System.out.println(c+a);//a=10 but c=ascci code(99)
-//		
+		Integer a = 10;
+		Character c = 'c';
+		System.out.println(a+c);//a=10 but c=ascci code(99)
+		System.out.println(c+a);//a=10 but c=ascci code(99)
+		
 		
 //		int a = 10;
 //		char c = 'c';
