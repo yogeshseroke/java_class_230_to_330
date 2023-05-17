@@ -113,9 +113,56 @@ public class SwitchCaseExample {
 //		}
 		
 		//find any number will be divisible by 3/5/7 or both...
-		//leap year...
+		//nested switch-case...
+//		int num = 5;
+//		
+//		switch(num%3) {
+//		case 0:
+//			switch(num%5) {
+//			case 0:
+//				
+//				System.out.println("divisible by 3 and 5");
+//				break;
+//				
+//				default :
+//					System.out.println("divisible by 3");
+//			}
+//			
+//			break;
+//			
+//		default :
+//			System.out.println("not divisible by 3");
+//			break;
+//		}
 		
-		
+		//leap year... (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+//		
+//	 int year = 2023;
+//	 
+//	 switch(year%4) {
+//	 	case 0:
+//	 		switch(year%100) {
+//	 		case 0:
+//	 			System.out.println("not a leap year, because it is divisible by 100");
+//	 			break;
+//	 			
+//	 			default:
+//	 				System.out.println("leap year, because it is not divisible by 100, because it is divisible by 4");
+//	 			
+//	 		}
+//	 		break;
+//	 		
+//	 	default:
+//	 		switch(year%400) {
+//	 		case 0:
+//	 			System.out.println("leap year, because it is divisible by 400");
+//	 			break;
+//	 			
+//	 		default :
+//	 			System.out.println("not a leap year..., because it is not divisible by 400");
+//	 			break;
+//	 		}
+//	 }
 		
 		
 	}
