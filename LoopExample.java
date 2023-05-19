@@ -140,6 +140,15 @@ public class LoopExample {
 		 *		1	 
 		 * 
 		 * 
+		 * 		*
+		 *     * *
+		 *    * * *
+		 *   * * * *
+		 *    * * *
+		 *     * *
+		 *      *
+		 *
+		 *  
 		 * */
 		
 //		for(int i=0; i<=4; i++) {
@@ -148,9 +157,122 @@ public class LoopExample {
 //			}
 //			System.out.println();
 //		}
+		//==========================================		
+//	for(int i=0; i<=4; i++) {
+//		for(int k=0; k<4-i; k++) {
+//			System.out.print(" ");
+//		}
+//		for(int j=0; j<=i; j++) {
+//			System.out.print("* ");
+//		}
+//		System.out.println();
+//	}
+//	
+//	for(int i=3; i>=0; i--) {
+//		for(int k=0; k<4-i; k++) {
+//			System.out.print(" ");
+//		}
+//		for(int j=0; j<=i; j++) {
+//			System.out.print("* ");
+//		}
+//		System.out.println();
+//	}
+	//==========================================
+		/*
+		 * 
+		 *  i=0 *
+		 *  i=1 # *
+		 *  i=2 * # *
+		 *  i=3 # * # *
+		 *  i=4 * # * # *
+		 *      j j j j j
+		 *      0 1 2 3 4
+		 *      
+		 *      (i+j)%2==0, *
+		 *      (0+0)%2
+		 *      (1+1)%2
+		 *      (2+0)
+		 *      (2+2)
+		 * 
+		 * */
+//		for(int i=0; i<=4; i++) {
+//			for(int j=0; j<=i; j++) {
+//				if((i+j)%2==0) {
+//					System.out.print("* ");
+//				}else {
+//					System.out.print("# ");
+//				}
+//				
+//			}System.out.println();
+//		}
 		
-	
-	
+		
+		//===============================
+		
+		//(2)while loop....
+		
+		/*
+		 *     syntax:- 
+		 *     			initialization.....
+		 *     			while(condition....){
+		 *     				
+		 *     				statement....
+		 *     				increment....
+		 *    			}
+		 * 
+		 * */
+		
+//		int i=1;
+//		while(i<=10) {
+//			System.out.println(i);
+//			i++;
+//		}
+		
+		//=================
+//		int num=5;
+//		int i=1;
+//		while(i<=10) {
+//			System.out.println(i*num);
+//			i++;
+//		}
+		
+		//fact, fibonacci, prime, armstrong....
+		//patterns....
+		
+		//prime..
+//		int num=5;
+//		int i=1,count=0;
+//		while(i<=num) {
+//			if(num%i==0) {
+//				count++;
+//			}
+//			i++;
+//		}
+//		if(count==2) {
+//			System.out.println("prime");
+//		}else {
+//			System.out.println("not a prime");			
+//		}
+		
+		//armstrong...
+		
+//		int num = 370;
+//		
+//		int temp = num;//370
+//		
+//		int r,arm=0;
+//		
+//		while(num!=0) {          //(370!=0)|(37!=0)|(3!=0)|(0!=0)
+//			r = num%10;          // r = 370%10 ---> 0| r(7) |r(3) 
+//			num = num/10;        // 37| 3 | 0
+//			arm = arm + (r*r*r); // 0| 343 | 343 + 27 = (arm)370
+//			
+//		}
+//		if(arm==temp) {
+//			System.out.println("Armstrong number...");
+//		}else {
+//			System.out.println("Not a armstrong number...");
+//		}
 	}
 
 }
