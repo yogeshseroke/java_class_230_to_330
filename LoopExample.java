@@ -273,6 +273,59 @@ public class LoopExample {
 //		}else {
 //			System.out.println("Not a armstrong number...");
 //		}
+		
+		
+		//================
+		
+		//do-while loop....
+		
+		
+		/*
+		 * 
+		 *        syntax :- exit control
+		 *      
+		 *       (1) initialization.....
+		 *       (2)do
+		 *          {
+		 *          (2.1)statement...
+		 *          (2.2)increment...
+		 *        
+		 *        }(3)while(condition...);
+		 * 
+		 * */
+		
+		
+//		int i=1;
+//		
+//		do {
+//			System.out.println(i);//1
+//			i++;//2
+//		}while(i>=5);//false
+		
+		
+		
+		//factorial...
+		
+//		int num=5,i=1;
+//		int temp=num;
+//		do {
+//			num=num*i;
+//			System.out.println(num);
+//			i++;
+//		}while(i<temp);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
