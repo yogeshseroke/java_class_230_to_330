@@ -10,8 +10,8 @@ public class VariableExample {
 			//local variable....
 			//dynamic...
 			void display() {
-				int x=1;
-				int y=2;
+				 int x=1;
+				 int y=2;
 				System.out.println("(local dynamic) x = "+x+" y = "+y);
 		
 			}
