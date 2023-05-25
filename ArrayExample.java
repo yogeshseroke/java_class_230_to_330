@@ -1,6 +1,7 @@
 package class05_06pm;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ArrayExample {
 
@@ -137,11 +138,35 @@ public class ArrayExample {
 		
 		//addition...
 		
+		//second Maximum......
+		
+		
+//		int ar[] = {15,8,4,7,3,16};
+//		
+//		int max = 0;
+//		int secMax = 0;
+//		
+//		for(int i=0; i<=ar.length-1; i++) {
+//			if(ar[i]>max) {
+//				secMax = max;
+//				max = ar[i];
+//			}else if(ar[i]>secMax && ar[i]<max){
+//				secMax = ar[i];
+//			}
+//		}System.out.println("max = "+ max + " secMax = "+ secMax);
+		
+		
+		
+		
+		
 	//============================================================
 		
 		
 		/*   multidimensional syntax:-
+		 * 
 		 * 		int ar[] = new int[5];
+		 * 
+		 * 2D array:-
 		 *    int ar[r][c] = new int[2][2];
 		 *  
 		 *  	int ar[][] = {{1,2},{3,4}};
@@ -150,6 +175,11 @@ public class ArrayExample {
 		 *  i=1 3 4	 
 		 *      j j
 		 *      0 1
+		 *
+		 *3D array:-
+		 *
+		 *  int ar[][][] = {{},{},{}};
+		 *  
 		 *  
 		*/
 		
@@ -177,7 +207,7 @@ public class ArrayExample {
 //			}
 //			System.out.println();
 //		}
-		
+//		
 //		for(int i=0; i<=ar.length-1; i++) {
 //			for(int j=0; j<=ar.length-1; j++) {
 //				if(max<ar[i][j]) {
@@ -192,37 +222,121 @@ public class ArrayExample {
 		//ascending increasing order...
 		
 		
-		        int[][] ar = {{11, 2}, {13, 4}};
-
+//		        int[][] ar = {{11, 2}, {13, 4}};
+//		        for(int i=0; i<=ar.length-1; i++) {
+//		        	for(int j=0; j<=ar.length-1; j++) {
+//		        		System.out.print(ar[i][j]+" ");
+//		        	}
+//		        	System.out.println();
+//		        }
 		        // Sort each inner array individually
-		        for (int i = 0; i < ar.length; i++) {
-		            for (int j = 0; j < ar[i].length - 1; j++) {
-		                for (int k = 0; k < ar[i].length - j - 1; k++) {
-		                    if (ar[i][k] > ar[i][k + 1]) {
-		                        // Swap elements
-		                        int temp = ar[i][k];
-		                        ar[i][k] = ar[i][k + 1];
-		                        ar[i][k + 1] = temp;
-		                    }
-		                }
-		            }
-		        }
+//		        for (int i = 0; i < ar.length; i++) {
+//		            for (int j = 0; j < ar[i].length - 1; j++) {
+//		            	for (int k = 0; k < ar[i].length - j - 1; k++) {
+//		                    if (ar[i][k] > ar[i][k + 1]) {
+//		                        // Swap elements
+//		                        int temp = ar[i][k];
+//		                        ar[i][k] = ar[i][k + 1];
+//		                        ar[i][k + 1] = temp;
+//		                    }
+//		                }
+//		            }
+//		        }
 
 		        // Print the sorted multidimensional array
 //		        for (int[] innerArray : ar) {
 //		            System.out.println(Arrays.toString(innerArray));
 //		        }
-		        for(int i=0; i<=ar.length-1; i++) {
-		        	for(int j=0; j<=ar.length-1; j++) {
-		        		System.out.print(ar[i][j]+" ");
-		        	}
-		        	System.out.println();
-		        }
-		    }
+//		        for(int i=0; i<=ar.length-1; i++) {
+//		        	for(int j=0; j<=ar.length-1; j++) {
+//		        		System.out.print(ar[i][j]+" ");
+//		        	}
+//		        	System.out.println();
+//		        }
+//		    }
+		
+		//======================================
+		
+		//3D array....
+		
+		//int ar[][][] = {{{1,2,3}},{{4,5,6}},{{7,8,9}}};
+		
+//		int ar[][][] = new int[2][2][2];
+//		ar[0][0][0] = 1;
+//		ar[0][0][1] = 2;
+//		System.out.println(ar[0][0][0]);
+//		System.out.println(ar[0][0][1]);
+		
+//		for(int i = 0; i<=ar.length-1; i++) {
+//			for(int j = 0; j<=ar[i].length-1; j++) {
+//				for(int k=0; k<=ar[j].length-1; k++) {
+//					System.out.print(ar[i][j][k]+" ");
+//				}
+//			}
+//			System.out.println();
+//		}
 		
 		
 		
+//		int[][][] arr = { { { 1, 2 }, { 3, 4 } }, { { 5, 6 }, { 7, 8 } } };
+//		 
+//        for (int i = 0; i < 2; i++)
+//        {    for (int j = 0; j < 2; j++)
+//        		{ for (int z = 0; z < 2; z++)
+//        			{	 
+//        			System.out.print(arr[i][j][z]+" ");
+//        			}
+//        		}
+//        System.out.println();
+//        }
+        
 		
-	
-
+		//====================
+		
+		//jagged array...
+		
+		
+//		int ar[][] = new int[3][];
+//		ar[0] = new int[3];
+//		ar[1] = new int[4];
+//		ar[2] = new int[2];
+//
+//		Scanner sc = new Scanner(System.in);
+//		
+//		for(int i=0; i<3; i++) {
+//			for(int j=0; j<ar[i].length; j++) {
+////				System.out.print(ar[i][j]+" ");
+//				ar[i][j]=sc.nextInt();
+//			}
+//			System.out.println();
+//		}
+//		for(int i=0; i<3; i++) {
+//			for(int j=0; j<ar[i].length; j++) {
+//				System.out.print(ar[i][j]+" ");
+////				ar[i][j]=sc.nextInt();
+//			}
+//			System.out.println();
+//		}
+		
+		
+//===========================
+		
+		//similar type elements....
+		
+		// int ar[] = {34,3,4,3};
+		
+		// int ar[] = new int[4];
+		
+		//Object
+		
+		
+		
+//		Object ar[] = {12, 1.2f, 12.23, true, 'x', "xxx"};
+//		
+//		for(int i=0; i<=ar.length-1; i++) {
+//			System.out.print(ar[i]+" ");
+//		}
+		
+        }
 }
+
