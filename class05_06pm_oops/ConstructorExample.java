@@ -16,27 +16,27 @@ public class ConstructorExample {
 	 * 
 	 * */ 
 	//default..
-//	ConstructorExample(){
-//		System.out.println("default constructor");
-//	}
-//	
+	ConstructorExample(){
+		System.out.println("default constructor");
+	}
+	
 //	//parameterized constructor...
-//	ConstructorExample(String name){
-//		this.x1=name;
-//		//System.out.println("deepak ki name = "+name);
-//	}
-//	
-//	
-//	//copy constructor...
-//	String x1;
-//	ConstructorExample(ConstructorExample x){
-//		this.x1=x.x1;
-//		//System.out.println(x.x);
-//	}
-//	
-//	void display() {
-//		System.out.println(x1);
-//	}
+	ConstructorExample(String name){
+		this.x1=name;
+	//	System.out.println("deepak ki name = "+name);
+	}
+	
+
+	//copy constructor...
+	String x1;
+	ConstructorExample(ConstructorExample x){
+		this.x1=x.x1;
+	//	System.out.println(this.x1);
+	}
+	
+	void display() {
+		System.out.println(x1);
+	}
 //===================================================
 	
 //add, sub, mul, div, mod, si	
@@ -65,10 +65,10 @@ public class ConstructorExample {
 
 //		ConstructorExample obj = new ConstructorExample();
 
-//		ConstructorExample obj2 = new ConstructorExample("abc");
-////		obj2.display();
-//		ConstructorExample obj3 = new ConstructorExample(obj2);
-//		obj3.display();
+		ConstructorExample obj2 = new ConstructorExample("abc");
+//		obj2.display();
+		ConstructorExample obj3 = new ConstructorExample(obj2);
+		obj3.display();
 
 	//=====================================
 		

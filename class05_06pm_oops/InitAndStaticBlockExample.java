@@ -1,13 +1,17 @@
 package class05_06pm_oops;
 
 public class InitAndStaticBlockExample {
-
+	
+	
 	/*
 	 * init block :- it is used to initialized dynamic value
 	 * 
+	 * int a,b;
+	 * 
 	 * {
 	 * 
-	 * int a; int b; . . . 
+	 *  a=10; 
+	 *  b=20; . . . 
 	 * 
 	 * }
 	 * 
@@ -15,11 +19,12 @@ public class InitAndStaticBlockExample {
 	 * 
 	 * static block :- it is used to initialized static value
 	 * 
-	 * 
+	 * int x,y;
 	 * 
 	 * static {
 	 * 
-	 * int x; int y; . . .
+	 * x=10;
+	 * y=20; . . .
 	 * 
 	 * }
 	 * 
@@ -37,17 +42,17 @@ public class InitAndStaticBlockExample {
 //		System.out.println(c);
 //	}
 
-	static int x,y,z;
-	
-	static {
-		x = 10;
-		y = 20;
-	}
-	
-	void display() {
-		z = x+y;
-		System.out.println(z);
-	}
+//	static int x,y,z;
+//	
+//	static {
+//		x = 10;
+//		y = 20;
+//	}
+//	
+//	void display() {
+//		z = x+y;
+//		System.out.println(z);
+//	}
 	
 //===================================================
 	
@@ -56,9 +61,34 @@ public class InitAndStaticBlockExample {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		InitAndStaticBlockExample obj = new InitAndStaticBlockExample();
+		//InitAndStaticBlockExample obj = new InitAndStaticBlockExample();
 		
-		obj.display();
+		//obj.display();
+		
+//		for(int i=0; i<4; i++) {
+//			for(int j=0; j<4; j++) {
+//				if(i==0 || j==0 || i==3 || j==3) {
+//					System.out.print("*");
+//				}else {
+//					System.out.print(" ");
+//				}
+//			}
+//			System.out.println();
+//		}
+		//==============
+		
+//		int r=4;
+//		int c=4;
+//		for(int i=0;i<r;i++) {
+//			for(int j=0;j<c;j++) {
+//				if(i==0 || i==r-1 || j==0 || j==c-1) {
+//					System.out.print("*");
+//				}else {
+//					System.out.print(" ");
+//				}
+//				
+//			}System.out.println();
+//		}
 		
 	}
 
